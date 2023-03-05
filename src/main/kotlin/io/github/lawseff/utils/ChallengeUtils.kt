@@ -1,6 +1,10 @@
 package io.github.lawseff.utils
 
 import io.github.lawseff.day1.CalorieCountingProblemSolver
+import io.github.lawseff.day2.RockPaperScissorsProblemSolver
+import io.github.lawseff.day3.RucksackReorganizationProblemSolver
+import io.github.lawseff.day4.CampCleanupProblemSolver
+import io.github.lawseff.day5.SupplyStackProblemSolver
 import java.io.File
 import java.time.LocalDate
 import java.time.temporal.ChronoUnit
@@ -9,7 +13,11 @@ private val START_DATE = LocalDate.of(2022, 12, 1)
 private const val INPUT_PATH = "src/main/resources/day%d/input.txt"
 private const val OUTPUT_PATH = "src/main/resources/day%d/output.txt"
 private val SOLVER_MAPPING = mapOf(
-    1 to CalorieCountingProblemSolver()
+    1 to CalorieCountingProblemSolver(),
+    2 to RockPaperScissorsProblemSolver(),
+    3 to RucksackReorganizationProblemSolver(),
+    4 to CampCleanupProblemSolver(),
+    5 to SupplyStackProblemSolver(),
 )
 
 class ChallengeUtils {

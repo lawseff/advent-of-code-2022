@@ -31,7 +31,9 @@ class NumberBuilderTest {
         "4nineeightseven2,42", "zoneight234,14", "7pqrstsixteen,76",
         "seven,77"
     )
-    fun `builds number from first and last digit (numerical or alphabetical)`(input: String, expectedNumber: Int) {
+    fun `builds number from first and last digit (numerical or alphabetical)`(
+        input: String, expectedNumber: Int
+    ) {
         val actualNumber = numberBuilder.buildFromFirstLastAlphaDigit(input)
 
         assertEquals(expectedNumber, actualNumber)

@@ -31,8 +31,8 @@ class NumberBuilder {
      * Returns a number, consisting of the first digit and the last digit of a [String] value. If
      * the value contains only one digit, it is considered both as the first and the last.
      *
-     * @param input String value to build a number from
-     * @return Two-digit number from the first and the last digit occurrence
+     * @param input string value to build a number from
+     * @return two-digit number from the first and the last digit occurrence
      */
     fun buildFromFirstLastDigit(input: String): Int {
         val firstDigit = input.first { it.isDigit() }
@@ -48,8 +48,8 @@ class NumberBuilder {
      * [String] value. The result contains only numerical digits. If the value contains only one
      * *alpha-digit*, it is considered both as the first and the last.
      *
-     * @param input String value to build a number from
-     * @return Two-digit number from the first and the last alpha-digit occurrence
+     * @param input string value to build a number from
+     * @return two-digit number from the first and the last alpha-digit occurrence
      */
     fun buildFromFirstLastAlphaDigit(input: String): Int {
         val matchResult = MATCHER.find(input) ?: throw NoSuchElementException()

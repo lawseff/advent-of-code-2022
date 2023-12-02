@@ -1,11 +1,7 @@
-package io.github.lawseff.adventofcode.solver
+package io.github.lawseff.adventofcode.challenge.parsing
 
 import io.github.lawseff.adventofcode.Day
 import io.github.lawseff.adventofcode.PartOne
-
-data class CubeSet(val redCount: Int, val greenCount: Int, val blueCount: Int)
-
-data class Game(val id: Int, val cubeSets: List<CubeSet>)
 
 @Day(2)
 class BagCubeProblemSolver {
@@ -19,10 +15,10 @@ class BagCubeProblemSolver {
                     && game.cubeSets.sumOf { it.blueCount } <= 14
 //            val totalGreen = game.cubeSets.sumOf { it.greenCount }
 //            val totalBlue = game.cubeSets.sumOf { it.blueCount }
-        }.sumOf { game -> game.id }
+        }.sumOf { game -> game.gameId }
     }
 
-    private fun mapToGame(input: String): Game {
+    private fun mapToGame(input: String): CubeGame {
         val withoutPrefix = input.removePrefix("Game ")
         val gameIdAndSets = withoutPrefix.split(":")
         val gameId = gameIdAndSets[0].toInt()
@@ -33,7 +29,7 @@ class BagCubeProblemSolver {
             val blue = countByColor.firstOrNull { it.contains("blue") }?.split(" ")?.get(0)?.toInt() ?: 0
             return@map CubeSet(red, green, blue)
         }
-        return Game(gameId, sets)
+        return CubeGame(gameId, sets)
     }
 
 }

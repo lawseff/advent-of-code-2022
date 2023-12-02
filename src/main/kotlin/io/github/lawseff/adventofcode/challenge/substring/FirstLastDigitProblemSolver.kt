@@ -1,9 +1,8 @@
-package io.github.lawseff.adventofcode.solver
+package io.github.lawseff.adventofcode.challenge.substring
 
 import io.github.lawseff.adventofcode.Day
 import io.github.lawseff.adventofcode.PartOne
 import io.github.lawseff.adventofcode.PartTwo
-import io.github.lawseff.adventofcode.substring.NumberBuilder
 
 @Day(1)
 class FirstLastDigitProblemSolver {

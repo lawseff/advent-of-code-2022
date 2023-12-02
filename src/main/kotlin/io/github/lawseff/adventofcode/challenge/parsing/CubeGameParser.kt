@@ -1,4 +1,4 @@
-package io.github.lawseff.adventofcode.cube
+package io.github.lawseff.adventofcode.challenge.parsing
 
 class CubeGameParser {
 

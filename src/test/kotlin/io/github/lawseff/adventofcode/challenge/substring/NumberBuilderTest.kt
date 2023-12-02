@@ -1,4 +1,4 @@
-package io.github.lawseff.adventofcode.substring
+package io.github.lawseff.adventofcode.challenge.substring
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test

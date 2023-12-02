@@ -1,4 +1,4 @@
-package io.github.lawseff.adventofcode.substring
+package io.github.lawseff.adventofcode.challenge.substring
 
 /**
  * Class for building numbers from digits, that are contained in a string input

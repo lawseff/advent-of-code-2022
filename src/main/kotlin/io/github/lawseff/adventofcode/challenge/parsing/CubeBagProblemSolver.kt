@@ -5,7 +5,7 @@ import io.github.lawseff.adventofcode.PartOne
 import io.github.lawseff.adventofcode.PartTwo
 
 @Day(2)
-class BagCubeProblemSolver {
+class CubeBagProblemSolver {
 
     companion object {
         const val MAX_RED_COUNT = 12

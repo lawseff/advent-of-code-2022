@@ -1,11 +1,10 @@
 package io.github.lawseff.adventofcode
 
-import io.github.lawseff.adventofcode.challenge.matrix.MatrixProblemSolver
 import io.github.lawseff.adventofcode.runner.DefaultSolutionRunner
 import io.github.lawseff.adventofcode.runner.SolutionRunner
-import io.github.lawseff.adventofcode.challenge.parsing.CubeBagProblemSolver
+import io.github.lawseff.adventofcode.challenge.set.SetIntersectionProblemSolver
 
 fun main() {
     val runner: SolutionRunner = DefaultSolutionRunner()
-    runner.run(MatrixProblemSolver::class)
+    runner.run(SetIntersectionProblemSolver::class)
 }

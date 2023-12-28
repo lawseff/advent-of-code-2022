@@ -1,10 +1,10 @@
 package io.github.lawseff.adventofcode
 
+import io.github.lawseff.adventofcode.challenge.range.NestedRangeMapProblemSolver
 import io.github.lawseff.adventofcode.runner.DefaultSolutionRunner
 import io.github.lawseff.adventofcode.runner.SolutionRunner
-import io.github.lawseff.adventofcode.challenge.set.SetIntersectionProblemSolver
 
 fun main() {
     val runner: SolutionRunner = DefaultSolutionRunner()
-    runner.run(SetIntersectionProblemSolver::class)
+    runner.run(NestedRangeMapProblemSolver::class)
 }
